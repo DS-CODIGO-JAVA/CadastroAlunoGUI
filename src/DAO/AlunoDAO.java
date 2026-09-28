@@ -14,7 +14,7 @@ public class AlunoDAO {
     }
 
     public void salvar(Aluno aluno){
-        String SQL = "INSERT INTO aluno (nome, email, curso, genero, receberEmail, receberNotificacoes, rua, cidade)" +
+        String SQL = "INSERT INTO aluno (nome, email, curso, genero, receberEmail, receberNotificacao, rua, cidade)" +
                      "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
