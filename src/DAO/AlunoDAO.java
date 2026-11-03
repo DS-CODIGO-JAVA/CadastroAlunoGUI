@@ -14,8 +14,8 @@ public class AlunoDAO {
     }
 
     public void salvar(Aluno aluno){
-        String SQL = "INSERT INTO aluno (nome, email, curso, genero, receberEmail, receberNotificacao, rua, cidade)" +
-                     "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        String SQL = "INSERT INTO aluno (nome, email, curso, genero, receberEmail, receberNotificacao, rua, cidade) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
             PreparedStatement stmt = conn.prepareStatement(SQL);
@@ -94,4 +94,3 @@ public class AlunoDAO {
         }
     }
 }
-
